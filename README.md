@@ -188,39 +188,6 @@ The application uses Prisma with the following main models:
   - Recording functionality
   - Chat during calls
 
-## 🚀 Deployment
-
-### Vercel Deployment
-
-1. **Install Vercel CLI**
-
-```bash
-npm i -g vercel
-```
-
-2. **Deploy**
-
-```bash
-vercel --prod
-```
-
-3. **Set Environment Variables**
-   Add all environment variables from `.env.local` to your Vercel project settings.
-
-### Manual Deployment
-
-1. **Build the application**
-
-```bash
-npm run build
-```
-
-2. **Start production server**
-
-```bash
-npm start
-```
-
 ## 📱 Mobile Support
 
 The application is fully responsive and optimized for:
@@ -237,17 +204,3 @@ The application is fully responsive and optimized for:
 - **XSS protection** with React
 - **Rate limiting** on API routes
 - **Secure authentication** with Clerk
-
-## 📊 Analytics & Monitoring
-
-- **Vercel Analytics** - Performance monitoring
-- **Clerk Analytics** - Authentication metrics
-- **Custom logging** - Application events
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
