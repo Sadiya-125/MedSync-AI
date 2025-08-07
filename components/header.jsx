@@ -6,6 +6,7 @@ import {
   ShieldCheck,
   Stethoscope,
   User,
+  MessageCircle,
 } from "lucide-react";
 import Link from "next/link";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
@@ -96,6 +97,23 @@ export default async function Header() {
                   </Button>
                 </Link>
               )}
+
+              {/* Chatbot Button for all authenticated users */}
+              <Link href="https://med-sync-ai.streamlit.app/" target="_blank">
+                <Button
+                  variant="outline"
+                  className="hidden md:inline-flex items-center gap-2 bg-emerald-900/20 border-emerald-700/30"
+                >
+                  <MessageCircle className="h-4 w-4 text-emerald-400" />
+                  AI Assistant
+                </Button>
+                <Button
+                  variant="ghost"
+                  className="md:hidden w-10 h-10 p-0 bg-emerald-900/20 border-emerald-700/30"
+                >
+                  <MessageCircle className="h-4 w-4 text-emerald-400" />
+                </Button>
+              </Link>
             </SignedIn>
 
             {(!user || user?.role !== "ADMIN") && (

@@ -319,7 +319,7 @@ export function PendingPayouts({ payouts }) {
                 Confirm Payout Approval
               </DialogTitle>
               <DialogDescription>
-                Are you sure you want to approve this payout?
+                Are You Sure You Want To Approve This Payout?
               </DialogDescription>
             </DialogHeader>
 

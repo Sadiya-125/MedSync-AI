@@ -63,9 +63,7 @@ export function AppointmentForm({ doctorId, slot, onBack, onComplete }) {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="description">
-          Describe your Medical Concern (Optional)
-        </Label>
+        <Label htmlFor="description">Describe your Medical Concern</Label>
         <Textarea
           id="description"
           placeholder="Please provide any details about your medical concern or what you'd like to discuss in the appointment..."

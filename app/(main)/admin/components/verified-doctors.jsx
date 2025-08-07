@@ -38,7 +38,7 @@ export function VerifiedDoctors({ doctors }) {
 
   const handleStatusChange = async (doctor, suspend) => {
     const confirmed = window.confirm(
-      `Are you sure you want to ${suspend ? "suspend" : "reinstate"} ${
+      `Are You Sure You Want To ${suspend ? "Suspend" : "Reinstate"} ${
         doctor.name
       }?`
     );

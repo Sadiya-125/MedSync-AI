@@ -99,11 +99,7 @@ export function AppointmentCard({
   const handleCancelAppointment = async () => {
     if (cancelLoading) return;
 
-    if (
-      window.confirm(
-        "Are you sure you want to cancel this appointment? This action cannot be undone."
-      )
-    ) {
+    if (window.confirm("Are You Sure You Want To Cancel This Appointment?")) {
       const formData = new FormData();
       formData.append("appointmentId", appointment.id);
       await submitCancel(formData);
@@ -127,7 +123,7 @@ export function AppointmentCard({
 
     if (
       window.confirm(
-        "Are you sure you want to mark this appointment as completed? This action cannot be undone."
+        "Are You Sure You Want To Mark This Appointment As Completed?"
       )
     ) {
       const formData = new FormData();
@@ -433,7 +429,7 @@ export function AppointmentCard({
                       <Video className="h-4 w-4 mr-2" />
                       {isAppointmentActive()
                         ? "Join Video Call"
-                        : "Video call will be available 30 minutes before appointment"}
+                        : "Video Call will be Available 30 Minutes before Appointment"}
                     </>
                   )}
                 </Button>
